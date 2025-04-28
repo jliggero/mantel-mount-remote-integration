@@ -1,11 +1,9 @@
+"""Init file for MantelMount Remote Integration."""
 import logging
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 
-_LOGGER.info(
-    "MantelMount Remote setup complete for %s:%s",
-    entry.data["ip_address"], entry.data["port"]
-)
+_LOGGER = logging.getLogger(__name__)
 
 DOMAIN = "mantel_mount_remote"
 
