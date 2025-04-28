@@ -1,4 +1,3 @@
-"""Init file for MantelMount Remote Integration."""
 import logging
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
@@ -19,7 +18,11 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         "port": entry.data["port"]
     }
     await hass.config_entries.async_forward_entry_setups(entry, ["switch"])
-    _LOGGER.info("MantelMount Remote setup complete")
+    _LOGGER.info(
+        "MantelMount Remote setup complete for %s:%s",
+        entry.data["ip_address"],
+        entry.data["port"]
+    )
     return True
 
 async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
