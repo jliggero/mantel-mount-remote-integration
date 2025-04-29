@@ -10,7 +10,7 @@
   "domain": "mantel_mount_remote",
   "keywords": ["mantelmount", "remote", "home-assistant"],
   "authors": ["jliggero"],
-  "documentation": "https://github.com/YOUR_USERNAME/mantel-mount-remote-integration",
+  "documentation": "https://github.com/jliggero/mantel-mount-remote-integration",
   "iot_class": "local_push",
   "logo": "brands/mantel_mount_remote/logo.svg",
   "branding": {
